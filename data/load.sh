@@ -1,7 +1,10 @@
 #!/bin/bash
 
 rm -rf $JBROWSE_DATA;
+
 mkdir -p $JBROWSE_DATA/raw/;
+ln -s $DATA_DIR/volvox/ $JBROWSE_DATA/raw/volvox;
+ln -sf $DATA_DIR/volvox.json $JBROWSE_DATA/raw/;
 
 prepare-refseqs.pl --fasta $DATA_DIR/volvox/volvox.fa --out $JBROWSE_DATA;
 biodb-to-json.pl -v --conf $DATA_DIR/volvox.json --out $JBROWSE_DATA;
@@ -22,8 +25,4 @@ cp $DATA_DIR/volvox/functions.conf                  $JBROWSE_DATA/functions.conf
 
 generate-names.pl --safeMode -v --out $JBROWSE_DATA;
 
-if [ ! -e $JBROWSE_DATA/raw/volvox ]; then
-    ln -s $DATA_DIR/volvox/ $JBROWSE_DATA/raw/volvox;
-fi;
-ln -sf $DATA_DIR/volvox.json $JBROWSE_DATA/raw/;
 
