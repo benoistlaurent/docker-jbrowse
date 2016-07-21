@@ -22,3 +22,7 @@ run-batch:
 
 kill:
 	docker kill jb
+
+.PHONY: data
+data:
+	JBROWSE_DATA=jbrowse_data DATA_DIR=data source data/load.sh
