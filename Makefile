@@ -1,7 +1,4 @@
 
-DATA=data
-
-
 help:
 	@echo "usage: make <command>"
 	@echo ""
@@ -14,8 +11,7 @@ help:
 build:
 	docker build -t jbrowse:1.12.0 .
 
-run:
-	docker run --rm --name jb -p 8080:80 -v `pwd`/$(DATA):/data jbrowse:1.12.0
+run: run-cv11
 
 run-batch:
 	docker run -it --rm --name jb -p 8080:80 -v `pwd`/$(DATA):/data jbrowse:1.12.0 bash

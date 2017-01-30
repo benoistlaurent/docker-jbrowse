@@ -1,0 +1,38 @@
+{
+   "tracks" : [
+      {
+        "feature" : [
+          "rRNA",
+          "mature_transcript",
+          "region",
+          "TSS",
+          "primary_transcript",
+          "CDS",
+          "repeat_region",
+          "ncRNA",
+          "promoter",
+          "gene",
+          "exon",
+          "intron",
+          "three_prime_UTR",
+          "five_prime_UTR",
+          "mRNA",
+          "tRNA"
+        ],
+        "track" : "GFF",
+        "class" : "feature2",
+        "category": "Miscellaneous",
+        "key" : "cv11.gff3"
+     },
+   ],
+   "TRACK DEFAULTS" : {
+      "autocomplete" : "all",
+      "class" : "feature"
+   },
+   "db_args" : {
+      "-adaptor" : "memory",
+      "-dir" : "/data/cv11"
+   },
+   "description" : "Youpi Example Database",
+   "db_adaptor" : "Bio::DB::SeqFeature::Store"
+}
