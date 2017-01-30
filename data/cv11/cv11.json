@@ -33,6 +33,6 @@
       "-adaptor" : "memory",
       "-dir" : "/data/cv11"
    },
-   "description" : "Youpi Example Database",
+   "description" : "Chlamydomonas CV11 Database",
    "db_adaptor" : "Bio::DB::SeqFeature::Store"
 }

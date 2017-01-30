@@ -1,10 +1,11 @@
-#!/bin/bash
+export JBROWSE_DATA=$JBROWSE/data
+export DATA_DIR=`pwd`/data/cv11
 
 rm -rf $JBROWSE_DATA/*
 
 mkdir -p $JBROWSE_DATA/raw/
 ln -s $DATA_DIR/cv11/ $JBROWSE_DATA/raw/cv11
-ln -sf $DATA_DIR/cv11.json $JBROWSE_DATA/raw/
+sed 's#"-dir" : "/data/cv11"#"-dir" : "'"$DATA_DIR"'"#' $DATA_DIR/cv11.json  > $JBROWSE_DATA/raw/
 
 prepare-refseqs.pl --fasta $DATA_DIR/cv11/cv11.fa --out $JBROWSE_DATA
 biodb-to-json.pl -v --conf $DATA_DIR/cv11.json --out $JBROWSE_DATA
