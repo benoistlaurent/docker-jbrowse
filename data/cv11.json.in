@@ -31,7 +31,7 @@
    },
    "db_args" : {
       "-adaptor" : "memory",
-      "-dir" : "/data/cv11"
+      "-dir" : "@DATA_DIR@"
    },
    "description" : "Chlamydomonas CV11 Database",
    "db_adaptor" : "Bio::DB::SeqFeature::Store"
