@@ -4,23 +4,23 @@
 # 
 # This Makefile assumes that those environment variables are adequatly set:
 #   - JBROWSE_DATA: path to JBrowse data directory
-#   - DATA_DIR: path to the directory where are cv11.json.in and cv11 directory
+#   - CV11_DATA_DIR: path to the directory where are cv11.json.in and cv11 directory
 #
 
 JBROWSE_RAW_DATA_DIR = $(JBROWSE_DATA)/raw
 
 # Input files.
-CONF_TRACKS = $(DATA_DIR)/cv11/directional_WTSS_RPM_strand+.bw.conf \
-              $(DATA_DIR)/cv11/directional_WTSS_RPM_strand-.bw.conf \
-              $(DATA_DIR)/cv11/sRNASeq_RPP_avRPM_strand+.bw.conf \
-              $(DATA_DIR)/cv11/sRNASeq_RPP_avRPM_strand-.bw.conf \
-              $(DATA_DIR)/cv11/sRNASeq_mock_avRPM_strand+.bw.conf \
-              $(DATA_DIR)/cv11/sRNASeq_mock_avRPM_strand-.bw.conf \
-              $(DATA_DIR)/cv11/sRNASeq_pool_strand+.bw.conf \
-              $(DATA_DIR)/cv11/sRNASeq_pool_strand-.bw.conf \
-              $(DATA_DIR)/cv11/bidirectional_WTSS.bw.conf \
+CONF_TRACKS = $(CV11_DATA_DIR)/cv11/directional_WTSS_RPM_strand+.bw.conf \
+              $(CV11_DATA_DIR)/cv11/directional_WTSS_RPM_strand-.bw.conf \
+              $(CV11_DATA_DIR)/cv11/sRNASeq_RPP_avRPM_strand+.bw.conf \
+              $(CV11_DATA_DIR)/cv11/sRNASeq_RPP_avRPM_strand-.bw.conf \
+              $(CV11_DATA_DIR)/cv11/sRNASeq_mock_avRPM_strand+.bw.conf \
+              $(CV11_DATA_DIR)/cv11/sRNASeq_mock_avRPM_strand-.bw.conf \
+              $(CV11_DATA_DIR)/cv11/sRNASeq_pool_strand+.bw.conf \
+              $(CV11_DATA_DIR)/cv11/sRNASeq_pool_strand-.bw.conf \
+              $(CV11_DATA_DIR)/cv11/bidirectional_WTSS.bw.conf \
 
-INPUT_FASTA = $(DATA_DIR)/cv11/cv11.fa
+INPUT_FASTA = $(CV11_DATA_DIR)/cv11/cv11.fa
 
 # Targets.
 JSON = $(JBROWSE_DATA)/raw/cv11.json
@@ -45,11 +45,11 @@ trackList.json: $(INPUT_FASTA) $(JSON) $(JBROWSE_DATA)
 	biodb-to-json.pl -v --conf $(JSON) --out $(JBROWSE_DATA)
 
 
-$(JSON): $(DATA_DIR)/cv11.json.in $(JBROWSE_RAW_DATA_DIR)
-	sed 's#@DATA_DIR@#'"$(DATA_DIR)"'#' $< > $@
+$(JSON): $(CV11_DATA_DIR)/cv11.json.in $(JBROWSE_RAW_DATA_DIR)
+	sed 's#@DATA_DIR@#'"$(JBROWSE_RAW_DATA_DIR)"'#' $< > $@
 
 $(RAW_DATA): $(JBROWSE_RAW_DATA_DIR)
-	cp -r $(DATA_DIR)/cv11 $@
+	cp -r $(CV11_DATA_DIR)/cv11 $@
 
 $(TRACKS): $(JBROWSE_DATA)
 	cat $(CONF_TRACKS) > $@
