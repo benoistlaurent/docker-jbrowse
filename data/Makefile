@@ -10,7 +10,8 @@
 JBROWSE_RAW_DATA_DIR = $(JBROWSE_DATA)/raw
 
 # Input files.
-CONF_TRACKS = $(CV11_DATA_DIR)/cv11/directional_WTSS_RPM_strand+.bw.conf \
+CONF_TRACKS = $(CV11_DATA_DIR)/cv11/cv11.gff3.conf \
+			  $(CV11_DATA_DIR)/cv11/directional_WTSS_RPM_strand+.bw.conf \
               $(CV11_DATA_DIR)/cv11/directional_WTSS_RPM_strand-.bw.conf \
               $(CV11_DATA_DIR)/cv11/sRNASeq_RPP_avRPM_strand+.bw.conf \
               $(CV11_DATA_DIR)/cv11/sRNASeq_RPP_avRPM_strand-.bw.conf \

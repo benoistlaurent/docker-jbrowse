@@ -1,30 +1,5 @@
 {
-   "tracks" : [
-      {
-        "feature" : [
-          "rRNA",
-          "mature_transcript",
-          "region",
-          "TSS",
-          "primary_transcript",
-          "CDS",
-          "repeat_region",
-          "ncRNA",
-          "promoter",
-          "gene",
-          "exon",
-          "intron",
-          "three_prime_UTR",
-          "five_prime_UTR",
-          "mRNA",
-          "tRNA"
-        ],
-        "track" : "GFF",
-        "class" : "feature2",
-        "category": "Miscellaneous",
-        "key" : "cv11.gff3"
-     },
-   ],
+   "tracks" : [],
    "TRACK DEFAULTS" : {
       "autocomplete" : "all",
       "class" : "feature"
