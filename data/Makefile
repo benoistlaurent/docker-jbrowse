@@ -57,11 +57,11 @@ $(TRACKS): $(JBROWSE_DATA)
 
 
 $(JBROWSE_RAW_DATA_DIR): $(JBROWSE_DATA)
-	mkdir $@
+	mkdir -p $@
 
 
 $(JBROWSE_DATA): $(JBROWSE)
-	mkdir $@
+	mkdir -p $@
 
 clean:
 	rm -rf $(JBROWSE_DATA)
