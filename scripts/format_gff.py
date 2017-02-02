@@ -1,6 +1,9 @@
 
 """Rewrite a GFF so that the parents are define prior to the children"""
 
+import argparse
+
+
 class Attributes:
     VALID_ATTRIBUTES = ['ID', 'Name', 'Alias', 'Parent', 'Target', 'Gap',
                         'Derives_from', 'Note', 'Dbxref', 'Ontology_term',
@@ -202,10 +205,14 @@ class GFF:
                 isdisplayed.append(feature)
         return s
 
+def parse_command_line():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('gff', help='input gff')
+    return parser.parse_args()
 
 def main():
-    gfffile = 'data/cv11/cv11.gff3'
-    gff = GFF.fromfile(gfffile)
+    args = parse_command_line()
+    gff = GFF.fromfile(args.gff)
     print(gff.togff())
 
 

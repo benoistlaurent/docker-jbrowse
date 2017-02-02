@@ -1,7 +1,6 @@
-##gff-version 3				 				
+##gff-version 3
 ##sequence-region cv11 1  205712
-# organism Chlamydomonas reinhardtii
-cv11	GenBank	region	1	205712	.	+	.	ID=cv11;Name=cv11;Is_circular=true;
+cv11	GenBank	region	1	205712	.	+	.	ID=cv11;Name=cv11;Is_circular=true
 cv11	bwa	ncRNA	972	997	.	-	1	ID=ncRNA.WendyA;Name=ncRNA.WendyA
 cv11	bwa	TSS	997	997	.	-	1	ID=TSS.WendyA;Name=TSS.WendyA
 cv11	bwa	five_prime_UTR	906	997	.	-	1	ID=WendyA.five_prime_UTR;Name=WendyA.five_prime_UTR
@@ -346,7 +345,7 @@ cv11	bwa	primary_transcript	76428	76585	.	-	1	ID=primary_transcript.trnE2;Name=p
 cv11	GenBank	exon	76495	76567	.	-	1	ID=exon.trnE2
 cv11	GenBank	gene	76495	76567	.	-	1	ID=trnE2;Name=trnE2
 cv11	GenBank	tRNA	76495	76567	.	-	1	ID=trnE2.r01
-cv11	IGV	promoter	76592	76599	.	-	1	 ID=promoter.trnE2;Name=promoter.trnE2
+cv11	IGV	promoter	76592	76599	.	-	1	ID=promoter.trnE2;Name=promoter.trnE2
 cv11	bwa	mature_transcript	77168	77778	.	-	1	ID=mature_transcript.psbH.t01;Name=mature_transcript.psbH.t01
 cv11	GenBank	mRNA	77168	77778	.	-	1	ID=psbH.t01;Name=psbH.t01
 cv11	GenBank	three_prime_UTR	77168	77457	.	-	1	ID=psbH.three_prime_UTR;Name=psbH.three_prime_UTR
@@ -580,7 +579,7 @@ cv11	GenBank	promoter	139554	139561	.	+	1	ID=promoter.psbA.2;Name=promoter.psbA.
 cv11	bwa	ncRNA	139566	139584	.	+	1	ID=ncRNA.1.psbA.2;Name=ncRNA.1.psbA.2
 cv11	bwa	TSS	139566	139566	.	+	1	ID=TSS.psbA.2;Name=TSS.psbA.2
 cv11	GenBank	five_prime_UTR	139566	139654	.	+	1	ID=psbA.2.five_prime_UTR;Name=psbA.2.five_prime_UTR
-cv11	GenBank	gene	139566	146344	.	+	1	ID=psbA.2; Name=psbA.2;Note=copy2
+cv11	GenBank	gene	139566	146344	.	+	1	ID=psbA.2;Name=psbA.2;Note=copy2
 cv11	bwa	mature_transcript	139619	146344	.	+	1	ID=mature_transcript.psbA.2.t01;Name=mature_transcript.psbA.2.t01
 cv11	GenBank	mRNA	139619	146344	.	+	1	ID=psbA.2.t01;Name=psbA.2.t01
 cv11	bwa	ncRNA	139619	139637	.	+	1	ID=ncRNA.2.psbA.2;Name=ncRNA.2.psbA.2
@@ -615,7 +614,7 @@ cv11	GenBank	gene	144473	145771	.	+	1	ID=orf8.2;Name=orf8.2;Note=copy2
 cv11	GenBank	CDS	146000	146302	.	+	0	ID=psbA.2.p01
 cv11	GenBank	exon	146000	146302	.	+	1	ID=exon5.psbA.2
 cv11	GenBank	three_prime_UTR	146303	146344	.	+	1	ID=psbA.2.three_prime_UTR;Name=psbA.2.three_prime_UTR
-cv11	GenBank	gene	148740	149394	.	-	1	ID=rrn5.2;Alias=rrn5;Name=rrn5.2;Note=copy2
+cv11	GenBank	gene	148740	149394	.	-	1	ID=rrn5.2;Name=rrn5.2;Alias=rrn5;Note=copy2
 cv11	GenBank	exon	149274	149394	.	-	1	ID=exon.rrn5.2
 cv11	GenBank	rRNA	149274	149394	.	-	1	ID=rrn5.2.r01
 cv11	GenBank	exon	149484	149996	.	-	1	ID=exon.rrnL.2
@@ -628,22 +627,22 @@ cv11	GenBank	gene	149992	150483	.	-	1	ID=I-CreI.2;Name=I-CreI.2
 cv11	GenBank	intron	149997	150664	.	-	1	ID=intron.rrnL.2
 cv11	GenBank	exon	150665	152886	.	-	1	ID=exon.rrnL.2
 cv11	GenBank	exon	152912	152958	.	-	1	ID=exon.rrn3.2
-cv11	GenBank	gene	152912	152958	.	-	1	ID=rrn3.2;Alias=rrn3;Name=rrn3.2;Note=copy2
+cv11	GenBank	gene	152912	152958	.	-	1	ID=rrn3.2;Name=rrn3.2;Alias=rrn3;Note=copy2
 cv11	GenBank	rRNA	152912	152958	.	-	1	ID=rrn3.2.r01
 cv11	GenBank	exon	152986	153267	.	-	1	ID=exon.rrn7.2
-cv11	GenBank	gene	152986	153267	.	-	1	ID=rrn7.2;Alias=rrn7;Name=rrn7.2;Note=copy 2
+cv11	GenBank	gene	152986	153267	.	-	1	ID=rrn7.2;Name=rrn7.2;Alias=rrn7;Note=copy 2
 cv11	GenBank	rRNA	152986	153267	.	-	1	ID=rrn7.2.r01
 cv11	bwa	ncRNA	153324	153346	.	-	1	ID=ncRNA.rrn7.2;Name=ncRNA.rrn7.2
 cv11	GenBank	exon	153717	153789	.	-	1	ID=exon.trnA.2
-cv11	GenBank	gene	153717	153789	.	-	1	ID=trnA.2;Alias=trnA;Name=trnA.2;Note=copy2
+cv11	GenBank	gene	153717	153789	.	-	1	ID=trnA.2;Name=trnA.2;Alias=trnA;Note=copy2
 cv11	GenBank	tRNA	153717	153789	.	-	1	ID=trnA.2.r01
 cv11	bwa	primary_transcript	153836	153939	.	-	1	ID=primary_transcript.trnI.2;Name=primary_transcript.trnI.2
 cv11	GenBank	exon	153844	153917	.	-	1	ID=exon.trnI.2
-cv11	GenBank	gene	153844	153917	.	-	1	ID=trnI.2;Alias=trnI;Name=trnI.2;Note=copy2
+cv11	GenBank	gene	153844	153917	.	-	1	ID=trnI.2;Name=trnI.2;Alias=trnI;Note=copy2
 cv11	GenBank	tRNA	153844	153917	.	-	1	ID=trnI.2.r01
 cv11	bwa	TSS	153939	153939	.	-	1	ID=TSS.trnI.2;Name=TSS.trnI.2
 cv11	bwa	primary_transcript	155020	156644	.	-	1	ID=primary_transcript.rrnS.2;Name=primary_transcript.rrnS.2
-cv11	GenBank	gene	155020	156644	.	-	1	ID=rrnS.2;Alias=rrnS;Name=rrnS.2;Note=copy2
+cv11	GenBank	gene	155020	156644	.	-	1	ID=rrnS.2;Name=rrnS.2;Alias=rrnS;Note=copy2
 cv11	GenBank	exon	155094	156574	.	-	1	ID=exon.rrnS.2
 cv11	GenBank	rRNA	155094	156574	.	-	1	ID=rrnS.2.r01
 cv11	bwa	ncRNA	156626	156644	.	-	1	ID=ncRNA.rrnS.2;Name=ncRNA.rrnS.2
