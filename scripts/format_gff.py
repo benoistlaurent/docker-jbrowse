@@ -179,6 +179,10 @@ class GFF:
                 for feat in self.get_feature_by_id(pid)]
 
     def togff(self):
+        """Return the GFF as a string.
+        
+        Features are sorted so that parent features come first.
+        """
         def parent_to_gff(feature):
             s = ''
             if feature.has_parent():
